@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 
-import images from "../../constants/index";
+import images from "../../constants/images";
 
 import "./Navbar.css";
 

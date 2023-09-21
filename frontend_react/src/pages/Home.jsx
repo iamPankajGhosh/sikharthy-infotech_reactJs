@@ -1,12 +1,12 @@
 import React from "react";
 
-import { Navbar, Preloader } from "../components";
+import { Intro, Navbar } from "../components";
 
 export default function Home() {
   return (
     <>
+      <Intro />
       <Navbar />
-      <Preloader />
     </>
   );
 }
