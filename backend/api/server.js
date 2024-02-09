@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 dotenv.config();
 const port = process.env.PORT || 3000;
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
 // MongoDb Connect
 mongoose.connect(process.env.MONGO_URL);
@@ -31,7 +31,7 @@ app.post("/api/posts", async (req, res) => {
   await newPost.save();
 });
 
-app.use(express.static(path.join(__dirname, "../frontend")));
+// app.use(express.static(path.join(__dirname, "../frontend")));
 
 app.listen(port, () => {
   console.log(
