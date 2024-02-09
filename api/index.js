@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import path from "path";
+// import path from "path";
 import bodyParser from "body-parser";
 import express from "express";
 
@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 dotenv.config();
 const port = process.env.PORT || 3000;
-const __dirname = path.resolve();
+// const __dirname = path.resolve();
 
 // MongoDb Connect
 mongoose.connect(process.env.MONGO_URL);
@@ -33,7 +33,7 @@ app.post("/api/posts", async (req, res) => {
   await newPost.save();
 });
 
-app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(port, () => {
   console.log(

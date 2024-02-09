@@ -2,7 +2,7 @@
   "name": "simpleblog.vercel.app",
   "version": "1.0.0",
   "description": "simple blog with post feature using vanillajs, expressjs, nodejs and mongodbatlas",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "author": "pankaj ghosh",
   "license": "ISC",
