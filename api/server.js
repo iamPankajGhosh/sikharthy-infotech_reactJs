@@ -33,7 +33,7 @@ app.post("/api/posts", async (req, res) => {
   await newPost.save();
 });
 
-app.use(express.static(path.join(__dirname, "../public")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.listen(port, () => {
   console.log(
