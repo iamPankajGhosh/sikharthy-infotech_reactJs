@@ -1,12 +1,9 @@
 {
-  "name": "backend",
+  "name": "simpleblog.vercel.app",
   "version": "1.0.0",
-  "description": "backend for simple blog",
+  "description": "simple blog with post feature using vanillajs, expressjs, nodejs and mongodbatlas",
   "main": "server.js",
   "type": "module",
-  "scripts": {
-    "start": "node server.js"
-  },
   "author": "pankaj ghosh",
   "license": "ISC",
   "dependencies": {
